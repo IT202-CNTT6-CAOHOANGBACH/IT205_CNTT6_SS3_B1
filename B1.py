@@ -1,17 +1,13 @@
 print("---- PHẦN MỀM TÍNH TỔNG QUỸ LƯƠNG ----")
-
-# Khởi tạo biến tổng ngân sách trước vòng lặp
-total_budget = 0  
-
-# Vòng lặp chạy 3 lần để nhập lương cho 3 nhân viên
+total_budget = 0;
 for employee_number in range(1, 4):
     print("Đang xử lý nhân viên số", employee_number)
-    
-    # Nhập mức lương
-    salary = int(input("Nhập mức Lương (VND): "))
-    
-    # Cộng dồn lương vào tổng ngân sách
-    total_budget = total_budget + salary  
+    salary = int(input(" Nhập mức lương (VND): "))
 
-# Sau khi nhập xong cả 3 người, in tổng tiền ra màn hình
-print(" KẾT QUẢ: TỔNG NGÂN SÁCH CẦN CHUẨN BỊ LÀ:", total_budget, "VND")
+    total_budget = total_budget + salary
+
+print("➡ KẾT QUẢ: TỔNG NGÂN SÁCH CẦN CHUẨN BỊ LÀ:", total_budget, "VND")
+
+
+#code này sai vì vòng lặp for sẽ duyệt lại từng lần mỗi khi xong 1 đk
+# biến total dc tạo trong khi lặp lại nên sẽ cứ reset liên tục
